@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quiénes somos? - Huellitas Medellín</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+   <style>
+    .hero-header {
+        /* Aquí va el link de la imagen de fondo que te pasé o la que prefieras */
+        background-image: url('https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?auto=format&fit=crop&q=80&w=1920');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Esto crea un efecto de profundidad al bajar */
+        height: 400px; /* Puedes ajustar la altura */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .header-overlay {
+        background: rgba(0, 0, 0, 0.4); /* Capa oscura para resaltar el texto */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .main-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+    }
+
+    .main-subtitle {
+        font-size: 1.2rem;
+        font-weight: 300;
+        opacity: 0.9;
+    }
+        :root {
+            --primary-teal: #009688;
+            --dark-text: #14746f;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --accent-orange: #ffb74d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--dark-text);
+            line-height: 1.8;
+        }
+
+        /* --- NAVEGACIÓN --- */
+        nav {
+            background: var(--white);
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo { font-weight: 700; font-size: 1.5rem; color: var(--primary-teal); text-decoration: none; }
+        .nav-links a { text-decoration: none; color: var(--dark-text); margin-left: 30px; font-size: 0.9rem; }
+
+        /* --- CABECERA DE SECCIÓN --- */
+        .about-header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://images.unsplash.com/photo-1576202733227-cf2107ae527b?auto=format&fit=crop&q=80&w=1500');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .about-header h1 { font-size: 3rem; margin-bottom: 10px; }
+
+        /* --- BLOQUES DE CONTENIDO --- */
+        .container {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 100px;
+        }
+
+        .row:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .content-box { flex: 1; }
+        .image-box { flex: 1; position: relative; }
+
+        .image-box img {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: 20px 20px 0px var(--primary-teal);
+        }
+
+        .row:nth-child(even) .image-box img {
+            box-shadow: -20px 20px 0px var(--accent-orange);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: var(--primary-teal);
+            margin-bottom: 20px;
+        }
+
+        /* --- ESTADÍSTICAS --- */
+        .stats {
+            background: var(--light-bg);
+            padding: 60px 10%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            border-radius: 50px;
+            margin-bottom: 80px;
+        }
+
+        .stat-item h3 { font-size: 2.5rem; color: var(--primary-teal); }
+        .stat-item p { font-weight: 600; color: #777; }
+
+        footer {
+            background: var(--dark-text);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .row { flex-direction: column !important; text-align: center; }
+            .stats { flex-direction: column; gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="quienes_somos.html" class="logo">Huellitas Medellín <i class="fas fa-paw"></i></a>
+        <div class="nav-links">
+            <a href="index_huellitas.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="quienes_somos.html">¿Quiénes somos?</a>
+            <a href="contactanos.html">Contacto</a>
+        </div>
+    </nav>
+
+   <header class="hero-header">
+    <div class="header-overlay">
+        <h1 class="main-title">Bienvenidos a Veterinaria Huellitas</h1>
+        <p class="main-subtitle">Cuidamos de tus mascotas con amor y profesionalismo</p>
+        <div class="title-underline"></div>
+    </div>
+</header>
+
+    <div class="container">
+       
+        <div class="row">
+            <div class="content-box">
+                <h2>Nuestra Misión</h2>
+                <p>Brindar servicios médicos veterinarios de la más alta calidad, integrando tecnología de punta con un trato humano y compasivo. Nos esforzamos por devolver la salud a cada paciente, garantizando la tranquilidad de sus familias a través de un servicio ético y profesional.</p>
+            </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=1000" alt="Misión Veterinaria">
+
+                </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&q=80&w=800" alt="Misión Veterinaria">
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <h3>15k+</h3>
+                <p>Pacientes Felices</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Atención Crítica</p>
+            </div>
+            <div class="stat-item">
+                <h3>20+</h3>
+                <p>Especialistas</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="content-box">
+                <h2>Nuestra Visión</h2>
+                <p>Para el año 2030, seremos el hospital veterinario de referencia nacional en Colombia, reconocidos por nuestra innovación en cirugías de alta complejidad y por ser pioneros en bienestar animal y medicina preventiva en la región de Antioquia.</p>
+            </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?auto=format&fit=crop&q=80&w=1000" alt="Visión Veterinaria">
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Huellitas Medellín. Pasión por la vida animal.</p>
+    </footer>
+
+</body>
+</html>

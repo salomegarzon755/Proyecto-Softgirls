@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Huellitas - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+    <style>
+        :root {
+            --primary-teal: #009688;
+            --primary-hover: #00796b;
+            --dark-text: #2c3e50;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --emergency-red: #d32f2f;
+            --accent-orange: #ffb74d; /* Inspirado en la imagen de training */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            overflow-x: hidden;
+        }
+
+        /* --- NAVEGACIÓN (Estilo Minimalista) --- */
+        nav {
+            background: var(--white);
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-teal);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-text);
+            margin-left: 30px;
+            font-weight: 400;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-teal);
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(135deg, #fff 60%, #e0f2f1 100%);
+            min-height: 80vh;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-text span {
+            color: var(--primary-teal);
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Círculo decorativo de fondo como en la imagen 2 */
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            background: var(--accent-orange);
+            border-radius: 50%;
+            z-index: 1;
+            opacity: 0.8;
+        }
+
+        .hero-image img {
+            width: 90%;
+            z-index: 2;
+            border-radius: 30px;
+           
+        }
+
+        /* --- SECCIÓN SERVICIOS --- */
+        .services {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+     
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 4px solid var(--primary-teal);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--primary-teal);
+            margin-bottom: 20px;
+        }
+
+       
+        .form-box {
+            background: var(--light-bg);
+            padding: 40px;
+            border-radius: 25px;
+        }
+
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; }
+       
+       
+        .btn-submit {
+            background: var(--primary-teal);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover { background: var(--primary-hover); }
+
+
+        footer {
+            background: var(--dark-text);
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .hero, .contact-container { grid-template-columns: 1fr; text-align: center; }
+            .hero-text p { margin: 0 auto 30px; }
+            .hero-image::before { width: 300px; height: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index_huellitas.html" class="logo">Huellitas Medellín <i class="fas fa-paw"></i></a>
+        <div class="nav-links">
+            <a href="index_huellitas.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="quienes_somos.html">¿Quiénes somos?</a>
+            <a href="contactanos.html">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Cuidamos lo que <span>más amas</span></h1>
+            <p>Atención médica de alta complejidad con el corazón puesto en cada latido. Somos el hospital veterinario líder en El Poblado.</p>
+            <div style="display: flex; gap: 15px;">
+                <button class="btn-submit" style="width: auto;" href="formulario.html">Agendar Cita</button>
+                <a href="formulario.html" class="btn-submit" style="width: auto; background: var(--dark-text);">Saber más</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800" alt="Mascota feliz">
+        </div>
+    </header>
+
+    <section class="services">
+        <h2>Servicios Especializados</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-stethoscope"></i>
+                <h3>Consulta General</h3>
+                <p>Chequeos preventivos y diagnóstico avanzado para mantener su salud al 100%.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-syringe"></i>
+                <h3>Vacunación</h3>
+                <p>Planes vacunales completos y desparasitación adaptada a su estilo de vida.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-microscope"></i>
+                <h3>Laboratorio</h3>
+                <p>Resultados rápidos y precisos con tecnología de última generación.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Huellitas Medellín. Todos los derechos reservados.</p>
+        <div style="margin-top: 15px;">
+            <i class="fab fa-facebook mx-2"></i>
+            <i class="fab fa-instagram mx-2"></i>
+            <i class="fab fa-whatsapp mx-2"></i>
+        </div>
+    </footer>
+
+</body>
+</html>
