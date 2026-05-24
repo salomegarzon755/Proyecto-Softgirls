@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Encuesta Veterinaria</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+     <nav>
+        <a href="formulario_satisfaccion.html" class="logo">Huellitas Medellín <i class="fas fa-paw"></i></a>
+        <div class="nav-links">
+            <a href="index_huellitas.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="quienes_somos.html">¿Quiénes somos?</a>
+            <a href="contactanos.html">Contacto</a>
+            <a href="formulario_satisfacción.html">Encuesta de Satisfacción</a>
+
+        
+
+        </div>
+    </nav>
+
+
+<div class="content">
+
+<form class="form">
+
+    
+
+<h4>ENCUESTA DE SATISFACCIÓN VETERINARIA</h4>
+
+<p>
+Complete este formulario para conocer su experiencia con nuestra atención veterinaria.
+</p>
+
+<div class="Contenedor">
+
+<div class="Titulo">
+<h3>Experiencia del Cliente</h3>
+</div>
+
+<div class="Informacion_usuario">
+
+<div class="Input_box">
+
+<span>Nombre del propietario</span>
+
+<input
+type="text"
+placeholder="Ingrese su nombre"
+required>
+
+</div>
+
+<div class="Input_box">
+
+<span>Nombre de la mascota</span>
+
+<input
+type="text"
+placeholder="Ingrese el nombre de la mascota"
+required>
+
+</div>
+
+<div class="Input_box">
+
+<span>Edad de la mascota</span>
+
+<input
+type="number"
+min="0"
+required>
+
+</div>
+
+<div class="Input_box">
+
+<span>Fecha de la atención</span>
+
+<input
+type="date"
+required>
+
+</div>
+
+<div class="Input_box">
+
+<span>Tipo de mascota</span>
+
+<input type="radio" name="tipo">
+<label>Perro</label>
+
+<input type="radio" name="tipo">
+<label>Gato</label>
+
+<input type="radio" name="tipo">
+<label>Otro</label>
+
+</div>
+
+<div class="Input_box">
+
+<span>Correo electrónico</span>
+
+<input
+type="email"
+placeholder="Ingrese su correo"
+required>
+
+</div>
+
+<div class="Input_box">
+
+<span>Teléfono</span>
+
+<input
+type="tel"
+placeholder="Ingrese su teléfono"
+required>
+
+</div>
+
+<div class="Input_box">
+
+<span>Sede visitada</span>
+
+<select required>
+
+<option>Ninguna</option>
+<option>El Poblado</option>
+<option>Laureles</option>
+<option>Belén</option>
+<option>Envigado</option>
+
+</select>
+
+</div>
+
+<h4>Servicio Veterinario</h4>
+
+<div class="Input_box">
+
+<span>
+¿Quedó satisfecho con la atención?
+</span>
+
+<input type="radio" name="satis">
+<label>Sí</label>
+
+<input type="radio" name="satis">
+<label>No</label>
+
+</div>
+
+<div class="Input_box">
+
+<span>Servicio recibido</span>
+
+<select>
+
+<option>Consulta General</option>
+
+<option>Vacunación</option>
+
+<option>Peluquería</option>
+
+<option>Hospitalización</option>
+
+<option>Cirugía</option>
+
+<option>Urgencias</option>
+
+</select>
+
+</div>
+
+<h4>Instalaciones</h4>
+
+<div class="Input_box">
+
+<span>
+¿Cómo califica nuestras instalaciones?
+</span>
+
+<input type="radio" name="inst">
+<label>Excelente</label>
+
+<input type="radio" name="inst">
+<label>Buena</label>
+
+<input type="radio" name="inst">
+<label>Regular</label>
+
+<input type="radio" name="inst">
+<label>Mala</label>
+
+</div>
+
+<div class="Input_box">
+
+<span>
+¿El tiempo de espera fue adecuado?
+</span>
+
+<input type="radio" name="espera">
+<label>Sí</label>
+
+<input type="radio" name="espera">
+<label>No</label>
+
+</div>
+
+<div class="Input_box">
+
+<span>
+¿Nuestro personal fue amable?
+</span>
+
+<input type="radio" name="personal">
+<label>Sí</label>
+
+<input type="radio" name="personal">
+<label>No</label>
+
+</div>
+
+<div class="Input_box">
+
+<span>
+¿Recibió información clara?
+</span>
+
+<input type="radio" name="info">
+<label>Sí</label>
+
+<input type="radio" name="info">
+<label>No</label>
+
+</div>
+
+<div class="Input_box">
+
+<span>
+¿Recomendaría nuestra veterinaria?
+</span>
+
+<input type="radio" name="recomienda">
+<label>Sí</label>
+
+<input type="radio" name="recomienda">
+<label>No</label>
+
+</div>
+
+<div class="Input_box">
+
+<span>
+¿Volvería a visitarnos?
+</span>
+
+<input type="radio" name="volver">
+<label>Sí</label>
+
+<input type="radio" name="volver">
+<label>No</label>
+
+</div>
+
+<div class="Input_box">
+
+<span>
+¿Qué fue lo que más le gustó?
+</span>
+
+<textarea rows="5"></textarea>
+
+</div>
+
+<div class="Input_box">
+
+<span>
+¿Qué podemos mejorar?
+</span>
+
+<textarea rows="5"></textarea>
+
+</div>
+
+<div class="Input_box">
+
+<span>
+Comentarios adicionales
+</span>
+
+<textarea rows="5"></textarea>
+
+</div>
+
+<input
+type="submit"
+value="Enviar Encuesta">
+
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+
+</html>

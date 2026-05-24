@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitalización Veterinaria - Huellitas Medellín</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            Huellitas Medellín <i class="fas fa-paw"></i>
+        </div>
+        <div class="nav-links">
+            <a href="index_huellitas.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="quienes_somos.html">¿Quiénes somos?</a>
+            <a href="contactanos.html">Contacto</a>
+             <a href="formulario_satisfaccion.html">formulario de satisfacción</a>
+            
+        </div>
+    </nav>
+
+    <main style="flex: 1;">
+        <section style="background: #2c3e50; color: white; padding: 60px 10%; text-align: center;">
+            <span style="color: #f39c12; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">
+                <i class="fas fa-procedures"></i> Recuperación y Monitoreo Continuo
+            </span>
+            <h1 style="font-size: 2.5rem; margin: 10px 0 15px; font-weight: 700;">Módulo de Hospitalización</h1>
+            <p style="max-width: 700px; margin: 0 auto; color: #b0bec5; font-size: 1.05rem;">
+                Zonas de internamiento diseñadas para brindar tranquilidad, control estricto de medicamentos e infusión de fluidos automatizada.
+            </p>
+        </section>
+
+        <section style="padding: 60px 10%; max-width: 800px; margin: 0 auto;">
+            <div style="background: white; padding: 35px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #edf2f7; margin-bottom: 40px;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <span style="padding: 12px; background: #fff8e1; color: #f39c12; border-radius: 12px; font-size: 1.25rem;"><i class="fas fa-clinic-medical"></i></span>
+                    <h2 style="font-size: 1.4rem; font-weight: 700; color: #2c3e50;">Infraestructura de Cuidado Intensivo</h2>
+                </div>
+                <ul style="list-style: none; padding: 0; color: #2c3e50; font-size: 0.95rem;">
+                    <li style="margin-bottom: 12px;"><i class="fas fa-paw" style="color: #f39c12; margin-right: 8px;"></i> <strong>Áreas Separadas:</strong> Ambientes independientes para perros y gatos para mitigar el estrés.</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-biohazard" style="color: #f39c12; margin-right: 8px;"></i> <strong>Unidad de Aislamiento:</strong> Box exclusivo para pacientes con enfermedades altamente infecciosas.</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-clock" style="color: #f39c12; margin-right: 8px;"></i> <strong>Actualización Médica:</strong> Envío de reportes sobre la evolución del paciente directamente a tu WhatsApp.</li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <form class="form" action="#" method="POST" style="background: #ffffff; padding: 40px; border-radius: 20px; border: 1px solid #edf2f7; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+                    <h3 style="font-size: 1.6rem; font-weight: 700; color: #2c3e50; margin-bottom: 5px;">Registro de Paciente Remitido para Internamiento</h3>
+                    <p style="color: #7f8c8d; margin-bottom: 25px; font-size: 0.95rem;">Usa este formulario si vienes derivado de otro centro médico o requieres reservar cupo postoperatorio.</p>
+                    
+                    <div class="Input_box" style="margin-bottom: 15px;">
+                        <span style="display: block; font-weight: 600; margin-bottom: 5px; color: #2c3e50;">Nombre del Propietario</span>
+                        <input type="text" name="nombre_dueno" placeholder="Ej. Juan Pérez" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                    </div>
+
+                    <div class="Input_box" style="margin-bottom: 15px;">
+                        <span style="display: block; font-weight: 600; margin-bottom: 5px; color: #2c3e50;">Teléfono de Contacto</span>
+                        <input type="tel" name="telefono" placeholder="Ej. 300 123 4567" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                    </div>
+
+                    <div class="Input_box" style="margin-bottom: 15px;">
+                        <span style="display: block; font-weight: 600; margin-bottom: 5px; color: #2c3e50;">Nombre del Paciente</span>
+                        <input type="text" name="nombre_mascota" placeholder="Ej. Lupe" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                    </div>
+
+                    <div class="Input_box" style="margin-bottom: 15px;">
+                        <span style="display: block; font-weight: 600; margin-bottom: 5px; color: #2c3e50;">Condición del Paciente</span>
+                        <select name="condicion_hospitalizacion" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                            <option value="" disabled selected>Selecciona el estado</option>
+                            <option value="post_quirurgico">Postoperatorio inmediato</option>
+                            <option value="tratamiento_medico">Tratamiento de patología crónica / agudizada</option>
+                            <option value="infeccioso">Sospecha o Diagnóstico de enfermedad infecciosa (Aislamiento)</option>
+                        </select>
+                    </div>
+
+                    <div class="Input_box" style="margin-bottom: 20px;">
+                        <span style="display: block; font-weight: 600; margin-bottom: 5px; color: #2c3e50;">Medicamentos actuales o Indicaciones Especiales</span>
+                        <textarea name="historial_hospitalizacion" placeholder="Especifica si requiere alimentación especial, fluidoterapia previa o cuidados específicos..." style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; min-height: 100px;"></textarea>
+                    </div>
+
+                    <input type="submit" value="Registrar Solicitud de Internamiento" style="background: #f39c12; color: white; font-weight: bold; text-transform: uppercase; padding: 15px; width: 100%; border: none; border-radius: 10px; cursor: pointer;">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Huellitas Medellín. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
